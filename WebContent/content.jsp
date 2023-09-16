@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Content</title>
 </head>
 <body>
 	<h2><%=request.getAttribute("content")%></h2>
