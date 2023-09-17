@@ -1,5 +1,8 @@
 # tp1Annuaire
-
+## Prérequis
+- JDK 1.8
+- Maven 3
+- Eclipse JEE
 ## Déployer le fichier war sur Tomcat
 ### Téléchargez et installer Tomcat 9
 https://tomcat.apache.org/download-90.cgi
