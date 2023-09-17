@@ -9,7 +9,9 @@ public class User implements Serializable{
 	private String email;
 	private String username;
 	
-	
+	public User() {
+		super();
+	}
 	public User(String email, String username) {
 		super();
 		this.email = email;
