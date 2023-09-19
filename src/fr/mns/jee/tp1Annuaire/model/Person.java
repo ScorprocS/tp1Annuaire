@@ -2,6 +2,7 @@ package fr.mns.jee.tp1Annuaire.model;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.Date;
 
 
 public class Person implements Serializable {
@@ -17,8 +18,19 @@ public class Person implements Serializable {
 	private Gender gender;
 	private Address address;
 	
-	
-	
+
+	public Person() {
+		super();
+	}
+	public Person(Long id, String firstName, String lastName, LocalDate birthDate, String phoneNumber, Gender gender) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.birthDate = birthDate;
+		this.phoneNumber = phoneNumber;
+		this.gender = gender;
+	}
 	public Long getId() {
 		return id;
 	}
