@@ -15,7 +15,7 @@
             <label for="firstname">Firstname : </label>
             <input type="text" name="firstname" id="firstname" required />
             <label for="birthdate">Birthdate : </label>
-            <input type="date" name="birthdate" id="birthdate" max="2023-09-19"/>
+            <input type="text" name="birthdate" id="birthdate" />
             <label for="phonenumber">Phonenumber : </label>
             <input type=tel name="phonenumber" id="phonenumber" maxlength="10" Pattern="^06[0-9]{8}" />
             

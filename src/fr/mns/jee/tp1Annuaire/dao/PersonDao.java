@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,7 +54,7 @@ public class PersonDao extends AbstractDao<Person>{
 	public Person create(Person entity)  {
 		Statement statement;
 		try {
-			SimpleDateFormat formatter=new SimpleDateFormat("yyyy-MM-dd");
+			DateTimeFormatter formatter= DateTimeFormatter.ofPattern("yyyy-MM-dd");
 			statement = ConnectionDao.getInstance().createStatement();
 			String sql = "INSERT INTO person(lastname, firstname, birthdate, phoneNumber, gender) VALUES ('"+entity.getLastName()+"','"+entity.getFirstName()+"','"+formatter.format(entity.getBirthDate())+"','"+entity.getPhoneNumber()+"','"+entity.getGender().name()+"')";
 			statement.executeUpdate(sql);
